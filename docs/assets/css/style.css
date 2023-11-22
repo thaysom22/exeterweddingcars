@@ -33,7 +33,7 @@ html {
 
 .hero .container .cta {
     position: relative;
-    top: calc(10rem + 5vw);
+    top: calc(8rem + 8vw);
 }
 
 #cars-section .car {
@@ -73,5 +73,15 @@ html {
     }
     .calendar-widget-lg {
         display: block;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .car img {
+        max-width: 100%;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+    .car img {
+        max-width: 90%;
     }
 }
