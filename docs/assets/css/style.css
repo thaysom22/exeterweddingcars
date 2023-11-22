@@ -33,7 +33,7 @@ html {
 
 .hero .container .cta {
     position: relative;
-    top: calc(8.5rem + 7vw);
+    top: calc(8rem + 8vw);
 }
 
 #cars-section .car {
