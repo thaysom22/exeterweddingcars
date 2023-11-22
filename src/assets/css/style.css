@@ -7,7 +7,7 @@ html {
     background-image: url('../images/jag-ls1.JPG');
     background-size: cover;
     background-position: center; 
-    height: calc(100vh - 4rem);
+    height: calc(100vh - 56px);
 }
 
 .hero::before {
