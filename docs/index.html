@@ -69,13 +69,37 @@
     </section>
 
     <!-- Car Rental Section -->
-    <section id="cars-section" class="pt-5 px-2">
+    <section id="cars-section" class="pt-5">
         <div id="view-cars" class="container pt-2">
+
+            <!-- The Jag -->
             <div class="row">
                 <div class="car d-flex flex-column align-items-center">
                     <h2 class="mb-4">The Jag</h2>
-                    <img src="assets/images/jag-ls2.JPG" alt="The Jag">
-                    <p class="description pb-4 pt-5">
+
+                    <div id="jag-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="assets/images/jag-ls2-cropped.jpg" class="d-block w-100" alt="The Jag 1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/jag-ls3-cropped.jpg" class="d-block w-100" alt="The Jag 2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/jag-ls4-cropped.jpg" class="d-block w-100" alt="The Jag 3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#jag-carousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#jag-carousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <p class="description py-5 px-2">
                         Mia is rare, expensive and exotic and if you want to you can get away from your Wedding
                         Ceremony very quickly indeed. Not only is Mia probably the most beautiful sportscar ever
                         made, but if you weren’t already the centre of attention you will be once you get into Mia
@@ -85,16 +109,42 @@
                         masterpiece can be yours to enjoy for weekend self-drive. Be warned, this car makes a
                         powerful statement, so your dress better be stunning, and your suit tailor made.
                     </p>
+
                     <button type="button" class="btn btn-lg btn-dark" data-bs-toggle="modal" data-bs-target="#book-jag-modal">
                         Book Mia
                     </button>
                 </div>
             </div>
-              <div class="row">
+
+            <!-- The Defender -->
+            <div class="row">
                 <div class="car d-flex flex-column align-items-center">
                     <h2 class="mb-4">The Defender</h2>
-                    <img src="assets/images/defender-ls1.JPG" alt="The Defender">
-                    <p class="description pb-4 pt-5">
+
+                    <div id="defender-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="assets/images/defender-ls1-cropped.jpg" class="d-block w-100" alt="The Defender 1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/defender-ls2-cropped.jpg" class="d-block w-100" alt="The Defender 2">
+                          </div>
+                          <!-- Add a third defender image here -->
+                          <!-- <div class="carousel-item">
+                            <img src="assets/images/defender-ls3-cropped.jpg" class="d-block w-100" alt="The Defender 3">
+                          </div> -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#defender-carousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#defender-carousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <p class="description py-5 px-2">
                         Sue is a beautiful vintage vehicle and has been loved and cherished since 1998 and despite
                         her rugged appearance she is a handsome vehicle with all the usual and scrapes you’d
                         expect from a proper British Land Rover Defender.
@@ -104,31 +154,57 @@
                         Self-drive weekend hire packages available. Dropped of the night before your big day and
                         collected the day after. Enjoy Sue responsibly.
                     </p>
+
                     <button type="button" class="btn btn-lg btn-dark" data-bs-toggle="modal" data-bs-target="#book-defender-modal">
                         Book Sue
                     </button>
                 </div>
-              </div>
-              <div class="row">
+            </div>
+
+            <!-- The BMW -->
+            <div class="row">
                 <div class="car d-flex flex-column align-items-center">
                     <h2 class="mb-4">The BMW</h2>
-                    <img src="assets/images/bmw-sq1.JPG" alt="The BMW">
-                    <p class="description pb-4 pt-5">
-                        Sam is stunningly individual with a host of upgrades including highly photogenic metallic San Marino blue exterior paint. This paint really sets your wedding photos apart. It’s a great accompaniment to get your white dress to really pop, or your tailored suit to look even crisper.
-                        Inside, extended BMW Merino leather upgrades cocoon you and your wedding party. Listen to your favourite tracks on the premium sound system. Sam is equipped with a 3.0 lite straight 6 which sounds as sumptuous and as sweet as a barbershop quartet of the gods. Your will ,most definitely know when you have arrived.
+
+                    <div id="bmw-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="assets/images/bmw-ls1-cropped.jpg" class="d-block w-100" alt="The BMW 1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/bmw-ls2-cropped.jpg" class="d-block w-100" alt="The BMW 2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/bmw-sq1-cropped.jpg" class="d-block w-100" alt="The BMW 3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#bmw-carousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#bmw-carousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <p class="description py-5 px-2">
+                        Daisy is stunningly individual with a host of upgrades including highly photogenic metallic San Marino blue exterior paint. This paint really sets your wedding photos apart. It’s a great accompaniment to get your white dress to really pop, or your tailored suit to look even crisper.
+                        Inside, extended BMW Merino leather upgrades cocoon you and your wedding party. Listen to your favourite tracks on the premium sound system. Daisy is equipped with a 3.0 lite straight 6 which sounds as sumptuous and as sweet as a barbershop quartet of the gods. Your will ,most definitely know when you have arrived.
                         Chauffeured services available.
                     </p>
+
                     <button type="button" class="btn btn-lg btn-dark" data-bs-toggle="modal" data-bs-target="#book-bmw-modal">
-                        Book Sam
+                        Book Daisy
                     </button>
                 </div>
-              </div>
+            </div>
         </div>
     </section>
 
     <hr>
     <!-- Info Section -->
-    <section id="info-section" class="d-flex align-items-center py-4 px-2">
+    <section id="info-section" class="d-flex py-5 px-2">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -150,8 +226,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <div><small>123 Fake Street, Exeter, EX4 1P</small></div>
-                    <div><small>01234 567890</small></div>
+                    <div><small>Exeter Wedding Cars</small></div>
+                    <div><small>07789243718</small></div>
+                    <div><small>exeterweddingcars@gmail.com</small></div>
+                    <br>
                     <div>
                         <small>
                             &copy; 
@@ -299,7 +377,7 @@
         <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="book-bmw-modal-label">Book Sam</h1>
+              <h1 class="modal-title fs-5" id="book-bmw-modal-label">Book Daisy</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body d-flex flex-column align-items-center">

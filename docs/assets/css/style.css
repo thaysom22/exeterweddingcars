@@ -38,7 +38,7 @@ html {
 
 #cars-section .car {
     padding: 0;
-    min-height: 85vh;
+    min-height: 80vh;
 }
 
 .car {
@@ -54,18 +54,17 @@ html {
     width: 100%;
 }
 
-.car img {
-    max-width: 80%; 
-    width: auto;
-    height: auto; 
+.carousel {
+    width: 95%;
+    max-width: 1000px;
 }
 
 #info-section {
-    min-height: 75vh;
+    min-height: 60vh;
 }
 
 .footer-section {
-    min-height: 25vh;
+    min-height: 20vh;
 }
 
 @media only screen and (max-width: 605px) {
@@ -85,12 +84,7 @@ html {
     }
 }
 @media only screen and (max-width: 500px) {
-    .car img {
-        max-width: 100%;
-    }
-}
-@media only screen and (min-width: 500px) and (max-width: 1000px) {
-    .car img {
-        max-width: 90%;
+    .carousel {
+        width: 100%;
     }
 }
