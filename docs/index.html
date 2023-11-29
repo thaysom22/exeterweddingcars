@@ -7,9 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exeter Wedding Cars</title>
-    <!-- Add Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -46,13 +47,24 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <h2 class="mb-4">What Our Customers Say</h2>
-                    <div class="review">
-                        <p>"Amazing service and beautiful cars. Highly recommended!"</p>
-                        <p>- John Doe</p>
+                    <div class="review py-3">
+                        <p>"During the summer of 2023 my wife and I got married and employed the use of Will’s beautiful sunset orange Jaguar F-Type as our vehicle of choice to depart the church as a married couple. Passing though my military guard of hour and led by our bagpiper through our family and friends, it felt like the picture couldn’t have been presented more perfectly than having such an opulent vehicle waiting for us at the bottom of a quant little lane. 
+                            Striking in sight and sound, the rasp of the exhaust provoked whoops and cheers as we sped away bouquet held aloft. Easy to handle, remarkably nimble and terrifically fast, our presence was applauded through the little towns we coasted through before our return to the venue to rejoin our guests. Will delivered the vehicle, decorated and emplaced it elegantly so that our procession could culminate at its doors. The overall experience could want for nothing more."</p>
+                        <p><em>- Capt J F Ward RA</em></p>
                     </div>
-                    <div class="review">
-                        <p>"The best car rental experience I've ever had. Will definitely rent again!"</p>
-                        <p>- Jane Smith</p>
+                    <div class="review py-3">
+                        <p>"We hired the V8 Jag for our wedding and I drove my beautiful new wife away and took the long route back. With the sun on our faces and the wind in our hair it was probably the happiest moment of my life. I am a lover of cars and a bit of a petrolhead myself I’m thankful I was able to drive my dream car on my wedding day. Thank you EWC. "</p>
+                        <p><em>- Mr and Mrs Mitchell</em></p>
+                    </div>
+                    <div class="review py-3">
+                        <p>"We rented Sue for our special day and opted for the chauffeur package. It was wonderful; my family always had Defenders so to be able to have a vehicle this authentic for our Wedding was a dream come true. So many memories! Punctual, no hassle and so easy to book unlike other sites. Just a Whatsapp message, no nonsense. Thank you EWC."</p>
+                        <p><em>- Katie Dewing</em></p>
+                    </div>
+                    <div class="review py-3">
+                        <p>"I had been looking online for a while to find the right vehicle for me and my groomsmen to arrive at my wedding venue. Luckily, I found Exeter Wedding Cars had just the unique and memorable vehicle I was after. They arrived promptly and really accommodated our photographer for some cracking pictures.
+                            Our whole experience made our day feel even more special. The car was immaculate and it received a lot of comments from our guests. Particularly the special noise coming from the BMW engine. Which was a lovely bonus!"
+                        </p>
+                        <p><em>- Dan Wood</em></p>
                     </div>
                 </div>
             </div>
@@ -76,7 +88,7 @@
                         masterpiece can be yours to enjoy for weekend self-drive. Be warned, this car makes a
                         powerful statement, so your dress better be stunning, and your suit tailor made.
                     </p>
-                    <button type="button" class="btn btn-lg btn-dark" data-bs-toggle="modal" data-bs-target="#bookJagModal">
+                    <button type="button" class="btn btn-lg btn-dark" data-bs-toggle="modal" data-bs-target="#book-jag-modal">
                         Book Mia
                     </button>
                 </div>
@@ -95,7 +107,7 @@
                         Self-drive weekend hire packages available. Dropped of the night before your big day and
                         collected the day after. Enjoy Sue responsibly.
                     </p>
-                    <button type="button" class="btn btn-lg btn-dark" data-bs-toggle="modal" data-bs-target="#bookDefenderModal">
+                    <button type="button" class="btn btn-lg btn-dark" data-bs-toggle="modal" data-bs-target="#book-defender-modal">
                         Book Sue
                     </button>
                 </div>
@@ -114,7 +126,7 @@
                         barbershop trio of the gods.
                         Self drive and chauffeur services available.
                     </p>
-                    <button type="button" class="btn btn-lg btn-dark" data-bs-toggle="modal" data-bs-target="#bookBMWModal">
+                    <button type="button" class="btn btn-lg btn-dark" data-bs-toggle="modal" data-bs-target="#book-bmw-modal">
                         Book Sam
                     </button>
                 </div>
@@ -124,10 +136,10 @@
 
     <hr>
     <!-- Info Section -->
-    <section id="info-section" class="d-flex align-items-center py-5 px-2">
+    <section id="info-section" class="d-flex align-items-center py-4 px-2">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 text-center">
                     <h2 class="mb-5">How it works</h2>
                     <p>We know that planning your wedding can be stressful so at Exeter Wedding Cars we make it easy. Check our calendar for your preferred vehicle availability. Our flexible self drive or chauffeur packages start from £500. Just let us know what you need and we will work for you. Full comprehensive insurance.</p>
                     <br>
@@ -148,7 +160,15 @@
                 <div class="col-12 text-center">
                     <div><small>123 Fake Street, Exeter, EX4 1P</small></div>
                     <div><small>01234 567890</small></div>
-                    <div><small>&copy; 2023 Exeter Wedding Cars. All rights reserved.</small></div>
+                    <div>
+                        <small>
+                            &copy; 
+                            <span id="copyright-year">
+                                <script>document.getElementById('copyright-year').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                            </span>
+                            Exeter Wedding Cars. All rights reserved.
+                        </small>
+                    </div>
                     <br>
                     <div><small>Website by <a target="_blank" class="text-light text-decoration-none" href="https://github.com/thaysom22">Thomas Haysom</a></small></div>
                 </div>
@@ -157,63 +177,199 @@
     </footer>
 
     <!-- Jag Modal -->
-    <div class="modal fade" id="bookJagModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="bookJagModalLabel" aria-hidden="true">
+    <div class="modal fade" id="book-jag-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="book-jag-modal-label" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="bookJagModalLabel">Book Mia</h1>
+              <h1 class="modal-title fs-5" id="book-jag-modal-label">Book Mia</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body d-flex justify-content-center">
+            <div class="modal-body d-flex flex-column align-items-center">
                 <div id="calendar-jag">
                     <!-- Calendar widget inserted here -->
-                    <iframe class="calendar-widget-sm" src="https://calendar.google.com/calendar/embed?height=450&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FLondon&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=Yzc0ZjMyODIxODY5MTQ3NjQ4YjMwMGJhMWU2MWY3OGM3MTlkMzFiZDQ1NmFiN2I5MjE4MzAyNWRlNzAxM2ZlMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441" style="border:solid 1px #777" width="300" height="450" frameborder="0" scrolling="no"></iframe>
+                    <iframe class="calendar-widget-sm" src="https://calendar.google.com/calendar/embed?height=450&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FLondon&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=Yzc0ZjMyODIxODY5MTQ3NjQ4YjMwMGJhMWU2MWY3OGM3MTlkMzFiZDQ1NmFiN2I5MjE4MzAyNWRlNzAxM2ZlMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441" style="border:solid 1px #777" width="350" height="450" frameborder="0" scrolling="no"></iframe>
                     <iframe class="calendar-widget-lg" src="https://calendar.google.com/calendar/embed?height=450&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FLondon&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=Yzc0ZjMyODIxODY5MTQ3NjQ4YjMwMGJhMWU2MWY3OGM3MTlkMzFiZDQ1NmFiN2I5MjE4MzAyNWRlNzAxM2ZlMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441" style="border:solid 1px #777" width="600" height="450" frameborder="0" scrolling="no"></iframe>
                 </div>
+                <form 
+                    class="gform my-5 d-flex flex-column car-form"
+                    method="POST"
+                    action="https://script.google.com/macros/s/AKfycbwZCiLjr9sZWW1UP3bJVoyS8bvZWz127rrJE93oLy1-C_kUeQANld9h10ljpYxBttqu1A/exec"
+                >
+                    <input type="hidden" name="car" value="Jag" />
+                    <label for="jag-form-name" class="mb-2">Name</label>
+                    <div class="input-group mb-3">
+                        <input type="text" id="jag-form-name" name="name" required />
+                    </div>
+
+                    <label for="jag-form-email" class="mb-2">Email</label>
+                    <div class="input-group mb-3">
+                        <input type="email" id="jag-form-email" name="email" required />
+                    </div>
+
+                    <label for="jag-form-phone" class="mb-2">Phone</label>
+                    <div class="input-group mb-3">
+                        <input type="tel" id="jag-form-phone" name="phone" required />
+                    </div>
+
+                    <label for="jag-delivery-datetime" class="mb-2">Delivery</label>
+                    <div class="input-group mb-3">
+                        <input type="datetime-local" id="jag-delivery-datetime" name="delivery" required />
+                    </div>
+
+                    <label for="jag-return-datetime" class="mb-2">Return</label>
+                    <div class="input-group mb-3">
+                        <input type="datetime-local" id="jag-return-datetime" name="return" required />
+                    </div>
+
+                    <label for="jag-message" class="mb-2">Message</label>
+                    <div class="input-group mb-3">
+                        <textarea id="jag-message" rows="10" name="message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary my-3">Submit</button>
+                    
+                    <div style="display:none" class="thankyou_message text-center">
+                        <!-- You can customize the thankyou message by editing the code below -->
+                        <h6>Thanks for your enquiry!</h6>
+                        <p>We will be in touch soon.</p>
+                    </div>
+                </form>
             </div>
           </div>
         </div>
     </div>
 
     <!-- Defender Modal -->
-    <div class="modal fade" id="bookDefenderModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="bookDefenderModalLabel" aria-hidden="true">
+    <div class="modal fade" id="book-defender-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="book-defender-modal-label" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="bookDefenderModalLabel">Book Mia</h1>
+              <h1 class="modal-title fs-5" id="book-defender-modal-label">Book Sue</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body d-flex justify-content-center">
+            <div class="modal-body d-flex flex-column align-items-center">
                 <div id="calendar-defender">
                     <!-- Calendar widget inserted here -->
-                    <iframe class="calendar-widget-sm" src="https://calendar.google.com/calendar/embed?height=450&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FLondon&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=NTYxNGQwODljNGYxNDMzMmNlMzhmNmFiMmY3ODZhYzI2MmUyNjA2MzhiYzE3NWM2NzExOGJmYzAwYmIzYmU1OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23A79B8E" style="border:solid 1px #777" width="300" height="450" frameborder="0" scrolling="no"></iframe>
+                    <iframe class="calendar-widget-sm" src="https://calendar.google.com/calendar/embed?height=450&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FLondon&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=NTYxNGQwODljNGYxNDMzMmNlMzhmNmFiMmY3ODZhYzI2MmUyNjA2MzhiYzE3NWM2NzExOGJmYzAwYmIzYmU1OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23A79B8E" style="border:solid 1px #777" width="350" height="450" frameborder="0" scrolling="no"></iframe>
                     <iframe class="calendar-widget-lg" src="https://calendar.google.com/calendar/embed?height=450&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FLondon&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=NTYxNGQwODljNGYxNDMzMmNlMzhmNmFiMmY3ODZhYzI2MmUyNjA2MzhiYzE3NWM2NzExOGJmYzAwYmIzYmU1OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23A79B8E" style="border:solid 1px #777" width="600" height="450" frameborder="0" scrolling="no"></iframe>
                 </div>
+                <form 
+                    class="gform my-5 d-flex flex-column car-form"
+                    method="POST"
+                    action="https://script.google.com/macros/s/AKfycbwZCiLjr9sZWW1UP3bJVoyS8bvZWz127rrJE93oLy1-C_kUeQANld9h10ljpYxBttqu1A/exec"
+                >
+                    <input type="hidden" name="car" value="Defender" />
+                    <label for="defender-form-name" class="mb-2">Name</label>
+                    <div class="input-group mb-3">
+                        <input type="text" id="defender-form-name" name="name" required />
+                    </div>
+
+                    <label for="defender-form-email" class="mb-2">Email</label>
+                    <div class="input-group mb-3">
+                        <input type="email" id="defender-form-email" name="email" required />
+                    </div>
+
+                    <label for="defender-form-phone" class="mb-2">Phone</label>
+                    <div class="input-group mb-3">
+                        <input type="tel" id="defender-form-phone" name="phone" required />
+                    </div>
+
+                    <label for="defender-delivery-datetime" class="mb-2">Delivery</label>
+                    <div class="input-group mb-3">
+                        <input type="datetime-local" id="defender-delivery-datetime" name="delivery" required />
+                    </div>
+
+                    <label for="defender-return-datetime" class="mb-2">Return</label>
+                    <div class="input-group mb-3">
+                        <input type="datetime-local" id="defender-return-datetime" name="return" required />
+                    </div>
+
+                    <label for="defender-message" class="mb-2">Message</label>
+                    <div class="input-group mb-3">
+                        <textarea id="defender-message" rows="10" name="message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary my-3">Submit</button>
+                    
+                    <div style="display:none" class="thankyou_message text-center">
+                        <!-- You can customize the thankyou message by editing the code below -->
+                        <h6>Thanks for your enquiry!</h6>
+                        <p>We will be in touch soon.</p>
+                    </div>
+                </form>
             </div>
           </div>
         </div>
     </div>
 
     <!-- BMW Modal -->
-    <div class="modal fade" id="bookBMWModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="bookBMWModalLabel" aria-hidden="true">
+    <div class="modal fade" id="book-bmw-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="book-bmw-modal-label" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="bookBMWModalLabel">Book Mia</h1>
+              <h1 class="modal-title fs-5" id="book-bmw-modal-label">Book Sam</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body d-flex justify-content-center">
+            <div class="modal-body d-flex flex-column align-items-center">
                 <div id="calendar-bmw">
                     <!-- Calendar widget inserted here -->
-                    <iframe class="calendar-widget-sm" src="https://calendar.google.com/calendar/embed?height=450&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FLondon&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=ZmI5ZGVmZTg1MzkyZmI2OWFmZmQyNjQzNzkyOTA3YmNmZTNmYTRjNWRjNGU4YzBjNjM4NzVhZDNjZGUwNjQyOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB" style="border:solid 1px #777" width="300" height="450" frameborder="0" scrolling="no"></iframe>
+                    <iframe class="calendar-widget-sm" src="https://calendar.google.com/calendar/embed?height=450&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FLondon&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=ZmI5ZGVmZTg1MzkyZmI2OWFmZmQyNjQzNzkyOTA3YmNmZTNmYTRjNWRjNGU4YzBjNjM4NzVhZDNjZGUwNjQyOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB" style="border:solid 1px #777" width="350" height="450" frameborder="0" scrolling="no"></iframe>
                     <iframe class="calendar-widget-lg" src="https://calendar.google.com/calendar/embed?height=450&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FLondon&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=ZmI5ZGVmZTg1MzkyZmI2OWFmZmQyNjQzNzkyOTA3YmNmZTNmYTRjNWRjNGU4YzBjNjM4NzVhZDNjZGUwNjQyOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB" style="border:solid 1px #777" width="600" height="450" frameborder="0" scrolling="no"></iframe>
                 </div>
+                    <form 
+                    class="gform my-5 d-flex flex-column car-form"
+                    method="POST"
+                    action="https://script.google.com/macros/s/AKfycbwZCiLjr9sZWW1UP3bJVoyS8bvZWz127rrJE93oLy1-C_kUeQANld9h10ljpYxBttqu1A/exec"
+                >
+                    <input type="hidden" name="car" value="BMW" />
+                    <label for="bmw-form-name" class="mb-2">Name</label>
+                    <div class="input-group mb-3">
+                        <input type="text" id="bmw-form-name" name="name" required />
+                    </div>
+
+                    <label for="bmw-form-email" class="mb-2">Email</label>
+                    <div class="input-group mb-3">
+                        <input type="email" id="bmw-form-email" name="email" required />
+                    </div>
+
+                    <label for="bmw-form-phone" class="mb-2">Phone</label>
+                    <div class="input-group mb-3">
+                        <input type="tel" id="bmw-form-phone" name="phone" required />
+                    </div>
+
+                    <label for="bmw-delivery-datetime" class="mb-2">Delivery</label>
+                    <div class="input-group mb-3">
+                        <input type="datetime-local" id="bmw-delivery-datetime" name="delivery" required />
+                    </div>
+
+                    <label for="bmw-return-datetime" class="mb-2">Return</label>
+                    <div class="input-group mb-3">
+                        <input type="datetime-local" id="bmw-return-datetime" name="return" required />
+                    </div>
+
+                    <label for="bmw-message" class="mb-2">Message</label>
+                    <div class="input-group mb-3">
+                        <textarea id="bmw-message" rows="10" name="message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary my-3">Submit</button>
+                    
+                    <div style="display:none" class="thankyou_message text-center">
+                        <!-- You can customize the thankyou message by editing the code below -->
+                        <h6>Thanks for your enquiry!</h6>
+                        <p>We will be in touch soon.</p>
+                    </div>
+                </form>
             </div>
           </div>
         </div>
     </div>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
+
 </body>
 
 </html>
