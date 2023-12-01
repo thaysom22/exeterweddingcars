@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
 html {
     scroll-behavior: smooth;
-  }
+}
+
+h1, h2, h3, h4, h5, h6, .header-font {
+    font-family: "Lobster Two", cursive;
+}
 
 .hero {
     position: relative;
@@ -27,13 +33,17 @@ html {
 
 .hero .container .banner {
     position: relative;
-    bottom: 3rem;
-
+    bottom: 5rem;
 }
 
 .hero .container .cta {
     position: relative;
-    top: calc(8rem + 8vw);
+    top: 13.5rem;
+}
+
+.hero .container .cta .btn{
+    background-color: black;
+    color: white;
 }
 
 #cars-section .car {
