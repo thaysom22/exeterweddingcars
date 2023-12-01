@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5, h6, .header-font {
     font-family: "Lobster Two", cursive;
 }
 
+.royal-gold {
+    color: #F5BD02;
+}
+
 .hero {
     position: relative;
     background-image: url('../images/jag-ls1.JPG');
@@ -32,13 +36,14 @@ h1, h2, h3, h4, h5, h6, .header-font {
 }
 
 .hero .container .banner {
+    height: 150px;
     position: relative;
     bottom: 5rem;
 }
 
 .hero .container .cta {
     position: relative;
-    top: 13.5rem;
+    top: calc(7rem + 5vw);
 }
 
 .hero .container .cta .btn{
